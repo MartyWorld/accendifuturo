@@ -357,27 +357,26 @@ jQuery(function ($) {
 
     /* Testimonial */
     $('.testimonial-two').owlCarousel({
-        items:1,
+        items:6,
         loop: true,
         smartSpeed: 500,
         responsiveClass: true,
         nav: false,
-        dots: true,
-        dotsContainer: ".owl-thumbs",
+        dots: false,
         autoplay: false,
         autoplayHoverPause: true,
         autoplayTimeout: 3000,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
                 margin: 30,
             },
             480: {
-                items: 1,
+                items: 3,
                 margin: 30,
             },
             992: {
-                items: 1,
+                items: 6,
                 margin: 30,
             }
         }
