@@ -656,11 +656,11 @@ nav .btn-setting {
     color: #ffffff;
 }
 .btn-hvr-pink:after {
-    background-color: #e57bff;
+    background-color: #34E1F0;
 }
 .btn-hvr-pink:hover, .btn-hvr-pink:focus {
-    border-color: #e57bff;
-    color: #ffffff;
+    border-color: #34E1F0;
+    color: #000!important;
 }
 .btn-hvr-blue:after {
     background-color: #84a1d2;
@@ -812,7 +812,9 @@ nav .btn-setting {
 .menu_bars:hover span:nth-child(2) {
     width: 30px;
 }
-
+.rev_slider img, .tp-simpleresponsive img {
+        max-width: 77px !important;height: 76px !important;
+}
 .menu_bars2 span:nth-child(2) {
     display: none;
 }
