@@ -813,7 +813,7 @@ nav .btn-setting {
     width: 30px;
 }
 .rev_slider img, .tp-simpleresponsive img {
-        max-width: 77px !important;height: 76px !important;
+        max-width: 80px !important;height: 79px !important;
 }
 .menu_bars2 span:nth-child(2) {
     display: none;
@@ -3336,6 +3336,9 @@ ul.rounded li::before {
     }
 }
 @media screen and (max-width: 767px) {
+    .rev_slider img, .tp-simpleresponsive img {
+        max-width: 70px !important;height: 70px !important;
+    }
     body {
         text-align: center;
     }
