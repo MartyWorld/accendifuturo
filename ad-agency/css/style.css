@@ -813,7 +813,8 @@ nav .btn-setting {
     width: 30px;
 }
 .rev_slider img, .tp-simpleresponsive img {
-        max-width: 80px !important;height: 79px !important;
+    max-width: 160px !important;
+    height: 120px !important;
 }
 .menu_bars2 span:nth-child(2) {
     display: none;
@@ -3352,7 +3353,7 @@ ul.rounded li::before {
     display: none!important;
 }
     .rev_slider img, .tp-simpleresponsive img {
-        max-width: 70px !important;height: 70px !important;
+        max-width: 90px !important;height: 68px !important;
     }
     body {
         text-align: center;
