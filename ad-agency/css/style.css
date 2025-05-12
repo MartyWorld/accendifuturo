@@ -152,7 +152,7 @@ a, a:active, a:focus, a:hover {
     outline: none;
 }
 a:focus, a:hover {
-    color: #FDD835;;
+    color: #34E1F0;;
 }
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {
     -webkit-transition: all .3s ease;
@@ -2930,11 +2930,11 @@ footer.bg-black2 {
 }
 #gdpr-cookie-message {
 background: #3d86b4;
-    padding: 20px 30px !important;
+    padding: 20px !important;
     position: fixed;
     bottom: 10px;text-align: left!important;
     right: 10px;    z-index: 100;
-    width: 500px;border-radius: 5px;
+    width: 680px;border-radius: 5px;
 }
 #gdpr-cookie-message  h4{
     color: #fff;
@@ -2945,7 +2945,7 @@ background: #3d86b4;
 }
 #gdpr-cookie-message p a{
     color: #fff;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: underline!important;
 }
 #gdpr-cookie-accept {
