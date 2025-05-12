@@ -1723,7 +1723,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
     transition: .5s linear;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: 40px 30px;
+    padding: 40px 20px;
     max-width: 350px;
 }
 .about-box i {
