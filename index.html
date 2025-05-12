@@ -86,7 +86,7 @@
     <header class="cursor-light">
         <nav class="navbar navbar-top-default navbar-expand-lg nav-three-circles bottom-nav nav-box-shadow no-animation">
             <div class="container-fluid">
-                <a class="logo ml-lg-1" href="javascript:void(0)">
+                <a class="logo ml-lg-1" href="/">
                     <img src="ad-agency/img/icon1.png" class="logo-default" alt="logo" title="Logo" style="    width: 60px;">
                 </a>
                 <div class="collapse navbar-collapse d-none d-lg-block">
@@ -587,7 +587,11 @@ A territory where young people, entrepreneurs, and local communities have access
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <p class="copyrights mt-2 mb-2">&copy; 2025 Accendi il Futuro</a>
+                    <p class="copyrights mt-2 mb-2">&copy; 2025 Accendi il Futuro | <a href="/privacy-policy.html"
+                            style="color: white;font-weight: 500;">Privacy Policy</a> | <a href="/terms-conditions.html"
+                            style="color: white;font-weight: 500;">Terms
+                            and Conditions</a> | <a href="/cookie-policy.html" style="color: white;font-weight: 500;">Cookie
+                            Policy</a></a>
                     </p>
                 </div>
             </div>
@@ -644,6 +648,7 @@ A territory where young people, entrepreneurs, and local communities have access
     <!-- custom script -->
     <script src="ad-agency/js/script.js"></script>
     <script>
+            var $window = $(window);
         var options = {
             title: 'We Use Cookies to Improve Your Experience',
             message: 'We use cookies to personalize content, analyze site traffic, and enhance your overall experience. By using our site, you agree to use our <a href="/privacy-policy" target="_blank">Privacy Policy</a> and <a href="/cookie-policy" target="_blank">Cookie Policy</a>',
@@ -657,6 +662,32 @@ A territory where young people, entrepreneurs, and local communities have access
         jQuery(document).ready(function () {
             $('body').ihavecookies(options);
         });
+
+    jQuery(window).on('scroll', function () {
+        if ($(this).scrollTop() >= 80) { // Set position from top to add class
+            $('header').addClass('header-appear');
+        }
+        else {
+            $('header').removeClass('header-appear');
+        }
+    });
+    /*bottom menu fix*/
+    if (jQuery("nav.navbar").hasClass("bottom-nav")) {
+        var navHeight = $(".bottom-nav").offset().top;
+        $(window).on("scroll", function () {
+            if ($window.scrollTop() > navHeight) {
+                $('header').addClass('header-appear');
+            } else {
+                $('header').removeClass('header-appear');
+            }
+        });
+    }
+    jQuery(".scroll").on("click", function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top - 40
+        }, 1100);
+    });
     </script>
 
 </body>
