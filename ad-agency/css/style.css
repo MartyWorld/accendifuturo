@@ -2925,6 +2925,36 @@ footer.bg-black2 {
 .categories-name > a > p:hover {
     color: #34E1F0;
 }
+#gdpr-cookie-advanced {
+    display: none!important;
+}
+#gdpr-cookie-message {
+background: #3d86b4;
+    padding: 20px 30px !important;
+    position: fixed;
+    bottom: 10px;text-align: left!important;
+    right: 10px;    z-index: 100;
+    width: 500px;border-radius: 5px;
+}
+#gdpr-cookie-message  h4{
+    color: #fff;
+}
+#gdpr-cookie-message p{
+    color: #fff;
+    font-weight: 500;
+}
+#gdpr-cookie-message p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline!important;
+}
+#gdpr-cookie-accept {
+        background: #fff;
+    border: 0;
+    padding: 8px 18px;    margin-top: 18px;
+    border-radius: 30px;
+    font-weight: 600;
+}
 
 .categories-name > a > p > span {
     float: right;
@@ -3344,12 +3374,19 @@ ul.rounded li::before {
 }
 
 @media screen and (max-width: 767px) {
+    #gdpr-cookie-message p {
+    line-height: 18px;
+}
+    #gdpr-cookie-message {
+    padding: 20px !important;
+    width: 100%!important;
+    right: 0;bottom: 0;border-radius: 0;
+}
     .team-classic-content {
+        background: transparent;        padding: 30px 20px 40px;
 
-
-        background: transparent;
     }
-    .dis-sm-n,.team-col2 .hvr-team2:before, .team-col2:focus .hvr-team2:before, .team-col2:active .hvr-team2:before {
+    #gdpr-cookie-message h4,.dis-sm-n,.team-col2 .hvr-team2:before, .team-col2:focus .hvr-team2:before, .team-col2:active .hvr-team2:before {
     display: none!important;
 }
     .rev_slider img, .tp-simpleresponsive img {
