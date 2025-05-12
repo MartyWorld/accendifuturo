@@ -2933,7 +2933,7 @@ background: #3d86b4;
     padding: 20px !important;
     position: fixed;
     bottom: 10px;text-align: left!important;
-    right: 10px;    z-index: 100;
+    left: 10px;    z-index: 100;
     width: 680px;border-radius: 5px;
 }
 #gdpr-cookie-message  h4{
