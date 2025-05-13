@@ -1710,6 +1710,9 @@ header.header-appear .navbar-top-default .header-social a:hover {
         transform: translateY(-10px)
     }
 }
+.gtranslate_wrapper a {
+    color: #fff !important;
+}
 .about:before {
     content: url(../img/about-circle.png);
     position: absolute;
@@ -2992,6 +2995,9 @@ background: #3d86b4;
 .tags li:hover p, .tags li:focus p {
     color: #ffffff;
 }
+.gtranslate_wrapper {
+    margin-left: 15px;
+}
 ul.rounded li {
     display: flex;
     margin-top: 20px;
@@ -3363,7 +3369,7 @@ ul.rounded li::before {
         display: block;
     }
     .navbar .menu-btn{
-        display: block;
+        /* display: block; */
     }
 }
 @media screen and (min-width: 767px) {
@@ -3374,6 +3380,10 @@ ul.rounded li::before {
 }
 
 @media screen and (max-width: 767px) {
+    /* .bottom-nav {
+    right: 15px;
+    top: 0;
+} */
     #gdpr-cookie-message p {
     line-height: 18px;
 }

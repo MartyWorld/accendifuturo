@@ -481,4 +481,3 @@ jQuery(function ($) {
     });
 });
 
-window.gtranslateSettings = {"default_language":"it","native_language_names":true,"detect_browser_language":true,"languages":["it","en"],"wrapper_selector":".gtranslate_wrapper"}
