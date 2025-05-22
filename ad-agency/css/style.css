@@ -736,8 +736,14 @@ nav .btn-setting {
 .top-header .btn-setting {
     padding: 4px 20px;
     font-size: 14px;
+    height: 36px;
 }
-
+.hvr-team2 {
+    height: 285px;    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
 /* ===================================
     Header & Navigation
 ====================================== */
@@ -1676,7 +1682,28 @@ header.header-appear .navbar-top-default .header-social a:hover {
     color: #ffffff;
     max-width: 720px;
 }
+.qr1,.qr2,.qr3 {
+        display: block;
+    width: 210px;
+    z-index: 10;
+    position: absolute;
 
+}
+.qr1{
+    top: 30px;
+    left:0;
+}
+.qr2 {
+
+    top: 30px;
+    right:0;
+}
+.qr3 {
+
+    top: 35%;
+    right: 50%;
+    margin-right: -105px;
+}
 .rare-box {
     height: 187px;
     width: 100%;
@@ -1884,8 +1911,8 @@ header.header-appear .navbar-top-default .header-social a:hover {
 /*Hover for team 2 and 4*/
 /* Sweep To Top */
 .hvr-team2 {
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -2995,6 +3022,13 @@ background: #3d86b4;
 .tags li:hover p, .tags li:focus p {
     color: #ffffff;
 }
+#donate .logo{
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+        margin-left: 100px;
+    transform: rotate(-15deg);
+}
 .gtranslate_wrapper {
     margin-left: 15px;
 }
@@ -3255,10 +3289,14 @@ ul.rounded li::before {
         margin-left: 0.1rem;
         padding-right: 1rem;
         padding-left: 1rem;
-    }
+    }.about-box {
+    height:316px
+}
     .team-classic-content {
         padding: 59px 20px;
     }
+    .hvr-team2 {
+    height: 240px;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -3274,8 +3312,13 @@ ul.rounded li::before {
     display: none!important;
 }
 }
-
+    .about-box:hover
+ {
+    transform: none;
+    transition: .5s linear;
+}
 @media screen and (max-width: 991px) {
+
     h1, .h1 {
         font-size: 2.95rem;
     }
@@ -3335,7 +3378,10 @@ ul.rounded li::before {
         display: block;
         margin: 0 auto;
     }
-
+    .hvr-team2 {
+        height: 180px;
+        padding: 20px 20px;
+    }
     .side-menu {
         width: 45%;
     }
@@ -3380,10 +3426,21 @@ ul.rounded li::before {
 }
 
 @media screen and (max-width: 767px) {
-    /* .bottom-nav {
-    right: 15px;
-    top: 0;
-} */
+    .qr1, .qr2, .qr3 {
+    width: 300px;
+    top: auto;
+    left: auto;right: auto;
+    margin-right: auto;
+    position: relative;
+}
+    .rare-box {
+       display: none;
+    }
+#donate .logo {
+
+    margin-left: 0;
+    transform: rotate(-15deg);
+}
     #gdpr-cookie-message p {
     line-height: 18px;
 }
@@ -3430,7 +3487,10 @@ ul.rounded li::before {
     .side-menu {
         width: 380px;
     }
-
+    .hvr-team2 {
+        height: auto;
+        padding: 40px 20px;
+    }
     section, .section-padding, .pricing-padding {
         padding: 4.5rem 0;
     }
@@ -3632,4 +3692,7 @@ ul.rounded li::before {
     .side-menu {
         width: 370px;
     }
+}
+.about-box {
+    height:100%
 }
