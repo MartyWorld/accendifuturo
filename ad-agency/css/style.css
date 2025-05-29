@@ -3427,7 +3427,9 @@ ul.rounded li::before {
 
 @media screen and (max-width: 767px) {
     .qr1, .qr2, .qr3 {
-    width: 300px;
+    width: 320px;
+    display: inline-block;
+    margin-top: 30px;
     top: auto;
     left: auto;right: auto;
     margin-right: auto;
