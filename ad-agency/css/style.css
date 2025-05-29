@@ -1684,7 +1684,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
 }
 .qr1,.qr2,.qr3 {
         display: block;
-    width: 210px;
+    width: 250px;
     z-index: 10;
     position: absolute;
 
@@ -1700,7 +1700,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
 }
 .qr3 {
 
-    top: 35%;
+    top: 60px;
     right: 50%;
     margin-right: -105px;
 }
