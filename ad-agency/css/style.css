@@ -3426,6 +3426,11 @@ ul.rounded li::before {
 }
 
 @media screen and (max-width: 767px) {
+    .about-img-small {
+    margin-left: 10px;
+    top: 0;
+    margin-bottom: 0;
+}
     .qr1, .qr2, .qr3 {
     width: 320px;
     display: inline-block;
@@ -3697,4 +3702,5 @@ ul.rounded li::before {
 }
 .about-box {
     height:100%
+
 }
